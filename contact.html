@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="node_modules/swup/dist/swup.min.js"></script> 
+    <script defer src="script.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav id="qnav">
+        <div class="nav" id="nav">
+            
+            
+            <ul id="side">
+                <li style=" margin-left: 8vw;"><a style="text-decoration: none;" href="/index.html">Home</a></li>
+            </ul>
+            
+            
+        </div>
+        
+    </nav>
+
+    <form onSubmit="sendEmail(); reset(); return false;" class="contact-form" data-aos="fade-left">
+        <div class="contact-head">
+            <h3>Contact Me</h3>
+        </div>
+
+        <div class="contact-fields">
+            <div class="input-box">
+                <input type="text" id="name" required/>
+                <span>Name</span>
+            </div>
+            <div class="input-box">
+                <input type="text" id="email" required/>
+                <span>Email</span>
+            </div>
+            <div class="input-area">
+                <textarea rows="4" id="concern" required></textarea>
+                <span>Message</span>
+            </div>
+        </div>
+
+        <div class="sub">
+            <button class="sub-button" type="submit">Submit</button>
+        </div>
+    </form>
+    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="contact.js"></script>
+    <script src="slider.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

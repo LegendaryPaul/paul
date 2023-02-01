@@ -9,17 +9,23 @@
 </head>
 <body>
     <!-- NAV -->
-    <nav>
-        <div class="nav">
+    <nav id="qnav">
+        <div class="nav" id="nav">
             <div class="Logo">
-                <h2>PAUL</h2>
+                <h2 id="Logo">PAUL</h2>
             </div>
-            <ul>
-                <li><a href="#wid">What i do</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#about">About</a></li>
+            <img class="hamburger" id="hamburger" onclick="openNav()" src="icons/hamburger.png">
+            <ul id="side">
+                <li><a class="link" href="#wid">What i do</a></li>
+                <li><a class="link" href="#work">Work</a></li>
+                <li><a class="link" href="#about">About</a></li>
+                <a class="link-contact" href="/contact.html">Let's talk</a>
+                <img class="hamburger2" onclick="closeNav()" src="icons/hamburger-white.png">
             </ul>
+            
+            
         </div>
+        
     </nav>
     <!-- MAIN-HERO -->
     <section id="main">
@@ -42,7 +48,7 @@
     <section id="goal">
         <div class="goal">
             <div class="goal-title parallax--tit">
-                <h2>Career Objective</h2>
+                <h2>Career<br>Objective</h2>
             </div>
             <div class="goal-desc parallax--des">
                 <p>
@@ -90,9 +96,6 @@
                 <div class="work-cards">
                     <img src="images/selected works/web designs/ecom-1.PNG"/>
                 </div>
-                <div class="work-cards">
-                    <img src="images/selected works/web designs/ecom-2.PNG"/>
-                </div>
             </div>
         </div>
         <div class="work-cont">
@@ -110,7 +113,7 @@
                     <img src="images/selected works/ux designs/mobile-1.PNG"/>
                 </div>
                 <div class="work-cards3">
-                    <img src="images/selected works/ux designs/mobile-3.PNG"/>
+                    <img src="/images/selected works/ux designs/mobile-3.png"/>
                 </div>
             </div>
         </div>
