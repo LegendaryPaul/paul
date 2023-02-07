@@ -37,7 +37,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 0 15vw;
+    padding: 0 13vw;
     width: 110%;
     max-width: 120vw;
     padding-top: 10px;
@@ -674,7 +674,7 @@ input {
     }
     .goal{
         justify-content: space-between;
-        margin: -20vh 40vh 20vw 0;
+        margin: -20vh 40vh 50vw 0;
         position: absolute;
     }
     .goal-desc{
@@ -682,7 +682,7 @@ input {
         margin-left: 55vw;
         width: 100%;
         max-width: 500px;
-        height: 70vh;
+        height: 100vh;
     }
     .goal-title{
         position: inherit;
@@ -703,6 +703,7 @@ input {
         height: 90vh;
         margin-bottom: 10vh;
         overflow-y: hidden;
+        margin-top: 5vh;
     }
     .wid{
         display: flex;
@@ -767,10 +768,11 @@ input {
     }
     
 #work {
-    height: 130vh;
+    height: 160vh; 
     width: 90vw;
     margin-bottom: 0vh;
     z-index: 1;
+    
 }
 .work-title {
     display: flex;
@@ -779,6 +781,11 @@ input {
 }
 .work-title h2 {
     font-size: 2rem;
+    font-weight: 600;
+}
+.works-conts {
+    height: 100%;
+    overflow-y: hidden;
 }
 .works{
     display: flex;
@@ -794,40 +801,31 @@ input {
 }
 .works .work-cards img {
     height: 300px;
-    width: 400px;
+    width: 100%;
 }
 .works .work-cards {
     height: 300px;
-    width: 400px;
+    width: 300px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     margin-bottom: 20px;
     margin-top: 20px;
     margin-right: 20px;
+    overflow-y: hidden;
 }
-.works .work-cards:hover img{
-    height: 320px;
-    width: 420px;
-    box-shadow: 0 4px 10px rgb(0 0 0 / 0.2);
-    transform: translateY(-2px);
-}
+
 .works .work-cards2 img {
     height: 200px;
-    width: 400px;
-    margin-right: 20px;
+    width: 100%;
 }
 .works .work-cards2 {
     height: 200px;
-    width: 380px;
+    width: 250px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     margin-bottom: 20px;
     margin-top: 20px;
+    overflow-y: hidden;
 }
-.works .work-cards2:hover img{
-    height: 220px;
-    width: 420px;
-    box-shadow: 0 4px 10px rgb(0 0 0 / 0.2);
-    transform: translateY(-2px);
-}
+
 .works .work-cards3 img {
     height: 500px;
     width: 250px;
@@ -839,13 +837,9 @@ input {
     margin-bottom: 20px;
     margin-top: 20px;
     margin-right: 20px;
+    overflow-y: hidden;
 }
-.works .work-cards3:hover img{
-    height: 520px;
-    width: 270px;
-    box-shadow: 0 4px 10px rgb(0 0 0 / 0.2);
-    transform: translateY(-2px);
-}
+
 .work-cont {
     margin-bottom: 30px;
 }
@@ -897,7 +891,7 @@ input {
     font-size: 0.8rem;
 }
 .foot-nav {
-    height: 30vh;
+    height: 20vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
